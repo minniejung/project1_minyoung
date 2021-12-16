@@ -1,5 +1,5 @@
 // DECLARATIONS : TIME
-let startingTime = 100; // Change here ★★★★★★★★★★ （100 = 1s, 3000 = 30s）
+let startingTime = 3000; // Change here ★★★★★★★★★★ （100 = 1s, 3000 = 30s）
 let count = startingTime;
 let counter;
 

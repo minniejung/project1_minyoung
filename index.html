@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minyoung's Game</title> 
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="#">Whac a mole ! ?</a></h1>
+  </header>
+
+
+  <div class="allBody">    
+
+    <div class="leftGrid">
+      <h2>Rules</h2>
+      <ol>
+        <li>Put your name and click the start button</li><br>
+        <li>You have 30 seconds</li><br>
+        <li>Click as many moles as you can !</li><br>
+        <li>You earn 10 points for each mole you get</li><br>
+        <li>Your score will automatically be added to the ranking board</li><br>
+        <li>If you get the highest score, your name will be on the 1st rank ! Woohoo !</li><br>
+        <li>Enjoy ^O^ !!!</li>
+      </ol>     
+    </div>
+
+    <div class="centerGrid">
+      <div class="centerGridTopPart">
+        <div><input type="text" id ="inputName" maxlength="9" placeholder="Player's name here :"></input></div>
+        <div><button type="button" id="btnStart" class="btn start">START</button></div>
+        <div class="timer"><h1><span id="timer">30.00</span></h1></div>        
+      </div>
+      
+      <div class="gameBox">
+        <div class="hole">
+          <div class="mole"></div>
+        </div>
+        <div class="hole">
+          <div class="mole"></div>
+        </div>
+        <div class="hole">
+          <div class="mole"></div>
+        </div>
+        <div class="hole">
+          <div class="mole"></div>
+        </div>
+        <div class="hole">
+          <div class="mole"></div>
+        </div>
+        <div class="hole">
+          <div class="mole"></div>
+        </div>
+        <div class="hole">
+          <div class="mole"></div>
+        </div>
+        <div class="hole">
+          <div class="mole"></div>
+        </div>
+        <div class="hole">
+          <div class="mole"></div>
+        </div>    
+      </div>
+
+      <div id="ending">
+        <h1>Yayyyyy !</h1>
+        <h2>Your final score is :</h2>
+        <h1 class="score">0</h1>
+        <h2><div class ="finalMsg"></div></h2>
+        <button id="btnTryAgain">Try Again!</button>
+      </div>
+
+    </div>
+  
+    <div class="rightGrid">
+      <h2>Score</h2>
+      <div class="myScore">
+        <p>Welcome my friend,<br>
+        <b><span id="result"></span></b><br><br>
+        <img src="./img/arrow.gif"> Your point is <img src="./img/arrow.gif"></p>
+        <h2><div class="score">0</div></h2>
+      </div>
+    
+      <h2 class="rankingTitle">Ranking</h2> 
+      <div class="scoreBoard">
+        <ol id ="scoreOl"></ol>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+<footer class="footer">
+  &#9786; Minyoung JUNG &#9786; &nbsp; The 1st Project - Ironhack Web Developement Course
+  , Novemeber 2021
+</footer>
+</html>
+

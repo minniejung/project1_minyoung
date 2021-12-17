@@ -62,6 +62,7 @@ startButton.addEventListener('click', () => {
   else if(!startGameEngaged){
     startSound.play();
     bgMusic.play();
+    bgMusic.loop = true;
     startGame();
     startGameEngaged = true;
   } 
